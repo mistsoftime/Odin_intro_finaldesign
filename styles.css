@@ -1,0 +1,107 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.header,
+.hero,
+.footer
+{
+    background-color: #1F2937;
+}
+
+.header,
+.hero
+{
+    color: #F9FAF8;
+}
+/*tener en cuenta que esto afecta a todo lo que hay en el grupo "hero",
+incluyendo "subtext", que tiene un color distinto*/
+
+.header
+{
+    padding: 10px 50px;
+}
+
+
+h1
+{
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 150px;
+    margin-right: 16px;
+    min-width: 150px;
+    max-width: 450px;
+}
+/*He puesto min width tanto en text como en image y ha dejado de hacer wrap y sigue reduciéndose. No entiendo qué pasa*/
+
+button
+{
+    background-color: #3882F6;
+    color: white;
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.image
+{
+    background-color: #6c767c;
+    display: flex;
+    flex: 1 1 150px;
+    margin-left: 16px;
+    min-width: 150px;
+    max-width: 450px;
+}
+
+.header
+{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subtext,
+ul
+{
+    color: #E5E7EB;
+    font-size: 18px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+button
+{
+    background-color: #3882F6;
+    margin-top: 10px;
+}
