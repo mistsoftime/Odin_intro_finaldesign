@@ -35,19 +35,18 @@ h1
 .hero
 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    gap: 32px;
 }
 
 .text
 {
     display: flex;
     flex-direction: column;
-    flex: 1 1 150px;
-    margin-right: 16px;
+    flex: 1 1 250px;
     min-width: 150px;
     max-width: 450px;
 }
@@ -63,14 +62,14 @@ button
     font-weight: bold;
 }
 
-.image
+.hero img
 {
     background-color: #6c767c;
     display: flex;
-    flex: 1 1 150px;
-    margin-left: 16px;
+    flex: 1 1 250px;
     min-width: 150px;
-    max-width: 450px;
+    max-width: 100%;
+    height: auto;
 }
 
 .header
@@ -104,4 +103,48 @@ button
 {
     background-color: #3882F6;
     margin-top: 10px;
+}
+
+
+
+.info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.squares p
+{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.squares img
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border-color: #3882F6;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.squares
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.squaretext1,
+.squaretext2,
+.squaretext3,
+.squaretext4
+{
+    flex: 1 1 25%;
+    min-width: 200px;
+    max-width: 500px;
 }
